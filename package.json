@@ -10,5 +10,9 @@
   },
   "devDependencies": {
     "vite": "^6.0.5"
+  },
+  "dependencies": {
+    "@fontsource/poppins": "^5.1.1",
+    "normalize.css": "^8.0.1"
   }
 }

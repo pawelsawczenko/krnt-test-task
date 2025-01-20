@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,7 +7,116 @@
     <title>Vite App</title>
   </head>
   <body>
-    <div id="app"></div>
+    <header class="header">
+      <div class="header__hamburger">
+        <button class="header__hamburger-btn">
+          <svg
+            width="36"
+            height="21"
+            viewBox="0 0 36 21"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect y="9" width="36" height="3" fill="#151812" />
+            <rect x="6" y="18" width="30" height="3" fill="#151812" />
+            <rect x="6" width="30" height="3" fill="#151812" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="header__menu-wrapper header__menu-wrapper_hidden">
+        <div class="header__menu">
+          <button class="header__close-btn">
+            <svg
+              width="29"
+              height="29"
+              viewBox="0 0 29 29"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17.1568 14.4999L28.4489 3.20755C29.1837 2.47303 29.1837 1.28541 28.4489 0.550891C27.7144 -0.18363 26.5267 -0.18363 25.7922 0.550891L14.4998 11.8433L3.20781 0.550891C2.47295 -0.18363 1.28567 -0.18363 0.551149 0.550891C-0.183716 1.28541 -0.183716 2.47303 0.551149 3.20755L11.8432 14.4999L0.551149 25.7923C-0.183716 26.5268 -0.183716 27.7144 0.551149 28.449C0.917206 28.8154 1.39852 28.9994 1.87948 28.9994C2.36045 28.9994 2.84141 28.8154 3.20781 28.449L14.4998 17.1566L25.7922 28.449C26.1586 28.8154 26.6396 28.9994 27.1205 28.9994C27.6015 28.9994 28.0825 28.8154 28.4489 28.449C29.1837 27.7144 29.1837 26.5268 28.4489 25.7923L17.1568 14.4999Z"
+                fill="black"
+              />
+            </svg>
+          </button>
+
+          <ul class="header__navigation">
+            <li class="header__navigation-list-item">
+              <span class="header__navigation-text-item">Про меня</span>
+            </li>
+            <li class="header__navigation-list-item">
+              <span class="header__navigation-text-item">Мой опыт</span>
+            </li>
+            <li class="header__navigation-list-item">
+              <span class="header__navigation-text-item">Мои навыки</span>
+            </li>
+            <li class="header__navigation-list-item">
+              <span class="header__navigation-text-item">Мои работы</span>
+            </li>
+            <li class="header__navigation-list-item">
+              <span class="header__navigation-text-item">прайс-лист</span>
+            </li>
+            <li class="header__navigation-list-item">
+              <span class="header__navigation-text-item">контакты</span>
+            </li>
+          </ul>
+
+          <div class="header__menu-socials socials">
+            <a href="https://github.com/" target="_blank">
+              <img src="src/img/icon-github.svg" alt="icon github" />
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+              <img src="src/img/icon-instagram.svg" alt="icon instagram" />
+            </a>
+            <a href="https://www.facebook.com/" target="_blank">
+              <img src="src/img/icon-facebook.svg" alt="icon facebook" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="header__about-wrapper">
+        <div class="header__about">
+          <div class="header__about-name">
+            <svg
+              class="circle"
+              width="36"
+              height="36"
+              viewBox="0 0 36 36"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="18" cy="18" r="18" fill="#FFA501" />
+            </svg>
+            <p class="header__about-name-text">Меня зовут Александра Смит</p>
+          </div>
+          <h1 class="header__about-headline">
+            Я web-разработчик из города Москва
+          </h1>
+
+          <a class="link" href="#"><button class="button">Портфолио</button></a>
+          <a class="link" href="#"><button>Про меня</button></a>
+        </div>
+      </div>
+
+      <div class="header__socials">
+        <p class="header__socials-text">Социальные сети</p>
+        <hr class="header__socials-line" />
+        <div class="header__socials-links socials">
+          <a href="https://github.com/" target="_blank">
+            <img src="src/img/icon-github.svg" alt="icon github" />
+          </a>
+          <a href="https://www.instagram.com/" target="_blank">
+            <img src="src/img/icon-instagram.svg" alt="icon instagram" />
+          </a>
+          <a href="https://www.facebook.com/" target="_blank">
+            <img src="src/img/icon-facebook.svg" alt="icon facebook" />
+          </a>
+        </div>
+      </div>
+    </header>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
