@@ -314,9 +314,150 @@
           </div>
         </div>
       </div>
+
+      <div class="contacts">
+        <figure class="contacts__img-wrapper">
+          <img
+            class="contacts__img"
+            src="src/img/Photo-1.jpg"
+            alt="photo of woman. owner of the website"
+          />
+        </figure>
+
+        <div class="contacts__wrapper">
+          <div class="contacts__header">
+            <div class="contacts__header-about">
+              <svg
+                class="circle"
+                width="36"
+                height="36"
+                viewBox="0 0 36 36"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="18" cy="18" r="18" fill="#FFA501" />
+              </svg>
+              <p class="contacts__header-text">Контакты</p>
+            </div>
+
+            <h2 class="contacts__header-headline">Свяжитесь со мной</h2>
+            <hr class="contacts__header-design-line" />
+          </div>
+
+          <div class="contacts__socials">
+            <p class="contacts__socials-text">
+              Любым удобным для вас способом:
+            </p>
+
+            <div class="contacts__socials-icons">
+              <a class="link" href="https://www.facebook.com/" target="_blank">
+                <img
+                  class="contacts__socials-icon contacts__socials-facebook"
+                  src="src/img/icon-facebook.svg"
+                  alt="facebook icon"
+              /></a>
+              <a class="link" href="https://telegram.org/" target="_blank"
+                ><img
+                  class="contacts__socials-icon contacts__socials-telegram"
+                  src="src/img/icon-telegram.svg"
+                  alt="telegram icon"
+              /></a>
+              <a class="link" href="https://www.instagram.com/" target="_blank"
+                ><img
+                  class="contacts__socials-icon contacts__socials-instagram"
+                  src="src/img/icon-instagram.svg"
+                  alt="instagram icon"
+              /></a>
+            </div>
+          </div>
+
+          <div class="contacts__form-section">
+            <p class="contacts__form-section-text">
+              Или оставьте ваши данные и я сама вам напишу:
+            </p>
+
+            <form class="contacts__form form">
+              <div class="form__input-wrapper">
+                <div class="form__name">
+                  <label class="form__label form__name-label" for="name"
+                    >Ваше имя</label
+                  >
+                  <input
+                    class="form__input form__name-input"
+                    type="text"
+                    name="name"
+                    required
+                  />
+                  <p
+                    class="form__error form__name-error form__name-error_hidden"
+                  >
+                    Пожалуйста, провертьте имя
+                  </p>
+                </div>
+
+                <div class="form__email">
+                  <label class="form__label form__email-label" for="email"
+                    >Ваша почта</label
+                  >
+                  <input
+                    class="form__input form__email-input"
+                    type="email"
+                    name="email"
+                    required
+                  />
+                  <p
+                    class="form__error form__email-error form__email-error_hidden"
+                  >
+                    Пожалуйста, провертьте почту
+                  </p>
+                </div>
+              </div>
+
+              <div class="form__msg">
+                <label class="form__label form__msg-label" for="msg"
+                  >Ваше сообщение</label
+                >
+                <input
+                  class="form__input form__msg-input"
+                  type="text"
+                  name="msg"
+                  required
+                />
+                <p class="form__error form__msg-error form__msg-error_hidden">
+                  Пожалуйста, провертьте ваше сообщение
+                </p>
+              </div>
+
+              <div class="form__checkbox">
+                <input
+                  class="form__checkbox-input"
+                  type="checkbox"
+                  name="checkbox"
+                  required
+                />
+                <label class="form__checkbox-label" for="checkbox">
+                  Я согласен(а) с
+                  <a
+                    class="form__checkbox-link"
+                    href="https://policies.google.com/privacy"
+                    target="_blank"
+                  >
+                    политикой конфиденциальности
+                  </a>
+                </label>
+              </div>
+
+              <button class="button form__btn-submit" type="submit">
+                Отправить сообщение
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
     </main>
 
     <script type="module" src="/src/main.js"></script>
     <script type="module" src="/src/header.js"></script>
+    <script type="module" src="/src/contacts.js"></script>
   </body>
 </html>

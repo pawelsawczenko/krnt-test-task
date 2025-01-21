@@ -1,0 +1,123 @@
+.form {
+  width: var(--grid-sm);
+}
+.form__name,
+.form__email,
+.form__msg {
+  position: relative;
+  padding-bottom: 28px;
+}
+
+.form__label,
+.form__error {
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+  padding: 0 8px;
+  background-color: white;
+}
+.form__label {
+  position: absolute;
+  top: -9px;
+  left: 20px;
+  height: 18px;
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+}
+.form__input {
+  width: 300px;
+  height: 45px;
+  box-sizing: border-box;
+  border: 1px solid rgb(0, 0, 0);
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.form__msg-input {
+  height: 143px;
+}
+.form__error {
+  position: absolute;
+  bottom: 8px;
+  left: 20px;
+}
+.form__input_error {
+  border: 1px solid rgb(255, 0, 0);
+}
+.form__name-error_hidden,
+.form__email-error_hidden,
+.form__msg-error_hidden {
+  display: inline-block;
+  visibility: hidden;
+  color: rgb(255, 0, 0);
+}
+.form__name-error_visible,
+.form__email-error_visible,
+.form__msg-error_visible {
+  visibility: visible;
+}
+.form__checkbox {
+  width: 180px;
+  height: 48px;
+  margin: 0 auto;
+  position: relative;
+}
+.form__checkbox-input {
+  display: block;
+  position: absolute;
+  top: 7px;
+}
+.form__checkbox-label {
+  display: block;
+  padding-left: 20px;
+  width: 145px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+.form__checkbox-link {
+  text-decoration: none;
+}
+.form__btn-submit {
+  display: block;
+  width: 219px;
+  height: 45px;
+  margin: 0 auto;
+}
+
+@media all and (min-width: 600px) {
+}
+@media all and (min-width: 720px) {
+}
+@media all and (min-width: 1024px) {
+  .form,
+  .form__input {
+    width: 410px;
+  }
+}
+@media all and (min-width: 1280px) {
+  .form,
+  .form__input,
+  .form__input-wrapper {
+    width: 585px;
+  }
+  .form__input-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .form__name-input,
+  .form__email-input {
+    width: 280px;
+  }
+  .form__msg-input {
+    height: 190px;
+  }
+  .form__btn-submit,
+  .form__checkbox {
+    margin: 0;
+  }
+}
+@media all and (min-width: 1440px) {
+}

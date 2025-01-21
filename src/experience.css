@@ -1,8 +1,7 @@
 .experience {
   width: var(--grid-sm);
   margin: 0 auto;
-  padding: 40px 0;
-  height: 1039px;
+  padding-top: 40px;
 }
 .experience__header {
   width: 245px;
@@ -136,6 +135,7 @@
   .experience__item {
     width: 418px;
     grid-template-columns: 1fr 9fr;
+    padding-bottom: 120px;
   }
   .experience__item-design {
     height: 174px;

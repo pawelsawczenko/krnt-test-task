@@ -5,3 +5,5 @@ import "@fontsource/poppins/700.css";
 import "./style.css";
 import "./header.css";
 import "./experience.css";
+import "./contacts.css";
+import "./form.css";
