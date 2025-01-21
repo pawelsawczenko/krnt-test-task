@@ -1,6 +1,7 @@
 :root {
   --brand-color: #ffa501;
   --brand-color-hover: #b87700;
+  --text: #000;
 }
 
 * {
@@ -21,6 +22,8 @@ button {
   height: 45px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   background: var(--brand-color);
+  font-size: 0.875rem;
+  font-weight: 700;
 }
 .button:hover {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
@@ -28,189 +31,18 @@ button {
   color: white;
   cursor: pointer;
 }
-.link button {
+.link {
+  cursor: pointer;
   font-size: 0.875rem;
   font-weight: 700;
+  color: var(--text);
+  text-decoration: none;
+}
+.link:visited {
+  color: var(--text);
 }
 .socials {
   width: 90px;
   display: flex;
   justify-content: space-between;
-}
-
-.header {
-  background-image: url("img/image1.jpg");
-  background-size: cover;
-  background-position-x: 50%;
-  height: 40rem;
-  position: relative;
-}
-.header__hamburger {
-  display: flex;
-  flex-direction: row-reverse;
-  padding-top: 1.25rem;
-  padding-right: 1.25rem;
-  padding-bottom: 10rem;
-}
-.header__hamburger-btn {
-  cursor: pointer;
-}
-.header__menu-wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 3;
-  background-color: rgba(255, 255, 255, 0.75);
-}
-.header__menu-wrapper_hidden {
-  display: none;
-}
-.header__menu-wrapper_visible {
-  display: block;
-}
-.header__menu {
-  position: relative;
-  width: 250px;
-  height: 100%;
-  background-color: var(--brand-color);
-}
-.header__close-btn {
-  position: absolute;
-  top: 24px;
-  right: 25px;
-  cursor: pointer;
-}
-.header__navigation {
-  margin: 0;
-  padding-top: 140px;
-  padding-left: 55px;
-  padding-bottom: 139px;
-  list-style-type: circle;
-  color: rgb(255, 255, 255);
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  font-weight: 700;
-  line-height: 36px;
-}
-.header__navigation-list-item::marker {
-  color: black;
-  font-size: 2.4rem;
-}
-.header__navigation-list-item {
-  position: relative;
-  cursor: pointer;
-}
-.header__navigation-text-item {
-  position: relative;
-  top: -4px;
-}
-.header__navigation-list-item:hover {
-  color: black;
-}
-
-.header__menu-socials {
-  position: absolute;
-  bottom: 51px;
-  left: 80px;
-}
-
-.header__about-wrapper {
-  width: 300px;
-  margin: 0 auto;
-}
-.header__about-name {
-  position: relative;
-}
-.header__about-name-text {
-  position: relative;
-  z-index: 2;
-  margin-left: 0.825rem;
-  font-weight: 700;
-}
-.header__about-name .circle {
-  position: absolute;
-  z-index: 1;
-  top: -0.625rem;
-  left: 0rem;
-}
-.header__about-headline {
-  width: 18.125rem;
-  font-size: 1.625rem;
-  font-weight: 700;
-  line-height: 39px;
-}
-.header__about .button {
-  margin-right: 44px;
-}
-.header__socials {
-  display: none;
-  position: absolute;
-  top: 370px;
-  left: -76px;
-
-  justify-content: space-between;
-  width: 338px;
-  color: #000;
-  transform: rotate(-90deg);
-}
-.header__socials-text {
-  position: relative;
-  top: -15px;
-  color: rgb(0, 0, 0);
-  font-size: 16px;
-  font-weight: 700;
-}
-.header__socials-line {
-  width: 70px;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #000;
-}
-
-@media all and (min-width: 600px) {
-  .header__menu {
-    width: 345px;
-  }
-  .header__navigation {
-    padding-left: 75px;
-  }
-  .header__menu-socials {
-    position: absolute;
-    bottom: 51px;
-    left: 128px;
-  }
-}
-@media all and (min-width: 720px) {
-  .header__hamburger {
-    padding-right: 1.875rem;
-    padding-bottom: 10rem;
-  }
-  .header__about-wrapper {
-    width: 680px;
-  }
-  .header__about-headline {
-    width: 33.125rem;
-    font-size: 3rem;
-    line-height: 60px;
-  }
-}
-@media all and (min-width: 1024px) {
-  .header {
-    height: 50rem;
-  }
-  .header__about-wrapper {
-    width: 960px;
-  }
-}
-@media all and (min-width: 1280px) {
-  .header__about-wrapper {
-    width: 1140px;
-  }
-}
-@media all and (min-width: 1440px) {
-  .header__socials {
-    display: flex;
-  }
 }
