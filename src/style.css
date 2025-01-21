@@ -2,6 +2,10 @@
   --brand-color: #ffa501;
   --brand-color-hover: #b87700;
   --text: #000;
+  --grid-sm: 300px;
+  --grid-md: 680px;
+  --grid-lg: 960px;
+  --grid-xl: 1140px;
 }
 
 * {
@@ -45,4 +49,8 @@ button {
   width: 90px;
   display: flex;
   justify-content: space-between;
+}
+.circle-small {
+  width: 16px;
+  height: 16px;
 }

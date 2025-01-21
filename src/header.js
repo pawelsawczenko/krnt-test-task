@@ -1,5 +1,3 @@
-import "./header.css";
-
 const hamMenuBtn = document.querySelector(".header__hamburger-btn");
 const menu = document.querySelector(".header__menu-wrapper");
 const closeMenuBtn = document.querySelector(".header__close-btn");
