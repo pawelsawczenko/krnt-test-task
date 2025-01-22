@@ -38,6 +38,8 @@
   padding-bottom: 20px;
 }
 .contacts__socials-text {
+  margin: 0;
+  margin-bottom: 20px;
   font-size: 0.875rem;
   font-weight: 700;
   line-height: 21px;
@@ -48,8 +50,6 @@
 }
 .contacts__socials-telegram {
   margin: 0 20px;
-}
-.contacts__form-section {
 }
 .contacts__form-section-text {
   margin: 0;
@@ -79,9 +79,14 @@
     position: absolute;
     right: -36px;
   }
+  .contacts__header-about {
+    height: 36px;
+    padding-bottom: 0px;
+  }
   .contacts__header-headline {
     font-size: 2.25rem;
     line-height: 60px;
+    padding-bottom: 0;
   }
 }
 @media all and (min-width: 1024px) {

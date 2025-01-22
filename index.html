@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Krnt Test Task. Vite App</title>
   </head>
   <body>
     <header class="header">
@@ -41,26 +41,42 @@
             </svg>
           </button>
 
-          <ul class="header__navigation">
-            <li class="header__navigation-list-item">
-              <span class="header__navigation-text-item">Про меня</span>
-            </li>
-            <li class="header__navigation-list-item">
-              <span class="header__navigation-text-item">Мой опыт</span>
-            </li>
-            <li class="header__navigation-list-item">
-              <span class="header__navigation-text-item">Мои навыки</span>
-            </li>
-            <li class="header__navigation-list-item">
-              <span class="header__navigation-text-item">Мои работы</span>
-            </li>
-            <li class="header__navigation-list-item">
-              <span class="header__navigation-text-item">прайс-лист</span>
-            </li>
-            <li class="header__navigation-list-item">
-              <span class="header__navigation-text-item">контакты</span>
-            </li>
-          </ul>
+          <nav class="header__navigation">
+            <ul class="header__navigation-list">
+              <a class="header__navigation-link" href="#about">
+                <li class="header__navigation-list-item">
+                  <span class="header__navigation-text-item">Про меня</span>
+                </li></a
+              >
+              <a class="header__navigation-link" href="#experience">
+                <li class="header__navigation-list-item">
+                  <span class="header__navigation-text-item">Мой опыт</span>
+                </li></a
+              >
+              <a class="header__navigation-link" href="#skills">
+                <li class="header__navigation-list-item">
+                  <span class="header__navigation-text-item">Мои навыки</span>
+                </li></a
+              >
+              <a class="header__navigation-link" href="#portfolio">
+                <li class="header__navigation-list-item">
+                  <span class="header__navigation-text-item">Мои работы</span>
+                </li></a
+              >
+              <a class="header__navigation-link" href="#prace-list">
+                <li class="header__navigation-list-item">
+                  <span class="header__navigation-text-item"
+                    >прайс&ndash;лист</span
+                  >
+                </li></a
+              >
+              <a class="header__navigation-link" href="#contacts">
+                <li class="header__navigation-list-item">
+                  <span class="header__navigation-text-item">контакты</span>
+                </li></a
+              >
+            </ul>
+          </nav>
 
           <div class="header__menu-socials socials">
             <a href="https://github.com/" target="_blank">
@@ -92,11 +108,13 @@
             <p class="header__about-name-text">Меня зовут Александра Смит</p>
           </div>
           <h1 class="header__about-headline">
-            Я web-разработчик из города Москва
+            Я web&ndash;разработчик из города Москва
           </h1>
 
-          <a class="link" href="#"><button class="button">Портфолио</button></a>
-          <a class="link" href="#">Про меня</a>
+          <a class="link" href="#portfolio"
+            ><button class="button">Портфолио</button></a
+          >
+          <a class="link" href="#about">Про меня</a>
         </div>
       </div>
 
@@ -118,7 +136,7 @@
     </header>
 
     <main class="main">
-      <div class="experience">
+      <div id="experience" class="experience">
         <div class="experience__header">
           <div class="experience__header-about">
             <svg
@@ -179,7 +197,7 @@
                   МГТУ им. Н. Э. Баумана
                 </h4>
                 <p class="experience__section-about">
-                  Диплом магистра | Москва (2014-2020)
+                  Диплом магистра &#124; Москва &#40;2014-2020&#41;
                 </p>
               </div>
 
@@ -262,10 +280,10 @@
                 />
 
                 <h4 class="experience__section-headline">
-                  Front-End Developer
+                  Front&ndash;End Developer
                 </h4>
                 <p class="experience__section-about">
-                  EPAM | Москва (2018-2019)
+                  EPAM &#124; Москва &#40;2018-2019&#41;
                 </p>
               </div>
               <p class="experience__section-description">
@@ -298,9 +316,9 @@
                   alt="pc screen with keyboard and pen icon"
                 />
 
-                <h4 class="experience__section-headline">UI/UX Designer</h4>
+                <h4 class="experience__section-headline">UI&#47;UX Designer</h4>
                 <p class="experience__section-about">
-                  Squad Team | Москва (2018)
+                  Squad Team &#124; Москва &#40;2018&#41;
                 </p>
               </div>
 
@@ -315,7 +333,7 @@
         </div>
       </div>
 
-      <div class="contacts">
+      <div id="contacts" class="contacts">
         <figure class="contacts__img-wrapper">
           <img
             class="contacts__img"
@@ -346,7 +364,7 @@
 
           <div class="contacts__socials">
             <p class="contacts__socials-text">
-              Любым удобным для вас способом:
+              Любым удобным для вас способом&#58;
             </p>
 
             <div class="contacts__socials-icons">
@@ -373,7 +391,7 @@
 
           <div class="contacts__form-section">
             <p class="contacts__form-section-text">
-              Или оставьте ваши данные и я сама вам напишу:
+              Или оставьте ваши данные и я сама вам напишу&#58;
             </p>
 
             <form class="contacts__form form">
@@ -436,7 +454,7 @@
                   required
                 />
                 <label class="form__checkbox-label" for="checkbox">
-                  Я согласен(а) с
+                  Я согласен&#40;а&#41; с
                   <a
                     class="form__checkbox-link"
                     href="https://policies.google.com/privacy"

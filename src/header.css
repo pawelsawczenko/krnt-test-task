@@ -42,17 +42,25 @@
   right: 25px;
   cursor: pointer;
 }
-.header__navigation {
+.header__navigation-list {
   margin: 0;
   padding-top: 140px;
   padding-left: 55px;
   padding-bottom: 139px;
   list-style-type: circle;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   text-transform: uppercase;
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 36px;
+}
+.header__navigation-link {
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: none;
+}
+.header__navigation-link:visited {
+  color: #ffffff;
 }
 .header__navigation-list-item::marker {
   color: var(--text);
@@ -60,7 +68,6 @@
 }
 .header__navigation-list-item {
   position: relative;
-  cursor: pointer;
 }
 .header__navigation-text-item {
   position: relative;
@@ -133,7 +140,7 @@
   .header__menu {
     width: 345px;
   }
-  .header__navigation {
+  .header__navigation-list {
     padding-left: 75px;
   }
   .header__menu-socials {

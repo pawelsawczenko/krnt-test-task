@@ -96,6 +96,10 @@
   .form__input {
     width: 410px;
   }
+  .form__btn-submit,
+  .form__checkbox {
+    margin: 0;
+  }
 }
 @media all and (min-width: 1280px) {
   .form,
@@ -113,10 +117,6 @@
   }
   .form__msg-input {
     height: 190px;
-  }
-  .form__btn-submit,
-  .form__checkbox {
-    margin: 0;
   }
 }
 @media all and (min-width: 1440px) {
