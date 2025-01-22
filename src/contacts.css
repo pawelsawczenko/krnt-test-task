@@ -60,8 +60,6 @@
   line-height: 21px;
 }
 
-@media all and (min-width: 600px) {
-}
 @media all and (min-width: 720px) {
   .contacts {
     width: var(--grid-md);
@@ -106,6 +104,4 @@
   .contacts {
     width: var(--grid-xl);
   }
-}
-@media all and (min-width: 1440px) {
 }

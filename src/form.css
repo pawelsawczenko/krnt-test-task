@@ -87,10 +87,6 @@
   margin: 0 auto;
 }
 
-@media all and (min-width: 600px) {
-}
-@media all and (min-width: 720px) {
-}
 @media all and (min-width: 1024px) {
   .form,
   .form__input {
@@ -118,6 +114,4 @@
   .form__msg-input {
     height: 190px;
   }
-}
-@media all and (min-width: 1440px) {
 }
