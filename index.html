@@ -403,6 +403,7 @@
                   <input
                     class="form__input form__name-input"
                     type="text"
+                    id="name"
                     name="name"
                     required
                   />
@@ -420,13 +421,14 @@
                   <input
                     class="form__input form__email-input"
                     type="email"
+                    id="email"
                     name="email"
                     required
                   />
                   <p
                     class="form__error form__email-error form__email-error_hidden"
                   >
-                    Пожалуйста, провертьте почту
+                    Введите почту в формате text&#64;text.com
                   </p>
                 </div>
               </div>
@@ -435,12 +437,13 @@
                 <label class="form__label form__msg-label" for="msg"
                   >Ваше сообщение</label
                 >
-                <input
+                <textarea
                   class="form__input form__msg-input"
                   type="text"
+                  id="msg"
                   name="msg"
                   required
-                />
+                ></textarea>
                 <p class="form__error form__msg-error form__msg-error_hidden">
                   Пожалуйста, провертьте ваше сообщение
                 </p>
@@ -450,7 +453,9 @@
                 <input
                   class="form__checkbox-input"
                   type="checkbox"
+                  id="checkbox"
                   name="checkbox"
+                  value="checked"
                   required
                 />
                 <label class="form__checkbox-label" for="checkbox">
@@ -476,6 +481,6 @@
 
     <script type="module" src="/src/main.js"></script>
     <script type="module" src="/src/header.js"></script>
-    <script type="module" src="/src/contacts.js"></script>
+    <script type="module" src="/src/form.js"></script>
   </body>
 </html>

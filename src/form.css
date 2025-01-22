@@ -33,11 +33,11 @@
   height: 45px;
   box-sizing: border-box;
   border: 1px solid rgb(0, 0, 0);
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding: 0.75rem 0.5rem;
 }
 .form__msg-input {
   height: 143px;
+  resize: none;
 }
 .form__error {
   position: absolute;
@@ -47,17 +47,24 @@
 .form__input_error {
   border: 1px solid rgb(255, 0, 0);
 }
+.form__name-error,
+.form__email-error,
+.form__msg-error {
+  display: inline-block;
+  color: rgb(255, 0, 0);
+}
 .form__name-error_hidden,
 .form__email-error_hidden,
 .form__msg-error_hidden {
-  display: inline-block;
   visibility: hidden;
-  color: rgb(255, 0, 0);
 }
 .form__name-error_visible,
 .form__email-error_visible,
 .form__msg-error_visible {
   visibility: visible;
+}
+.form__msg-error {
+  bottom: 12px;
 }
 .form__checkbox {
   width: 180px;
