@@ -12,7 +12,7 @@ menu.addEventListener("click", (e) => {
   if (e.target.closest(".header__navigation-link")) {
     toggleMenu();
   }
-  if (e.target.closest(".header__hamburger-btn")) {
+  if (e.target.closest(".header__close-btn")) {
     toggleMenu();
   }
   if (!e.target.closest(".header__menu")) {
