@@ -31,7 +31,7 @@ const emailIsValid = (email) => {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 };
 
-form.addEventListener("submit", (e) => {
+form.addEventListener("submit", async (e) => {
   e.preventDefault();
   cleanErrors();
   let formError = false;
@@ -81,7 +81,38 @@ form.addEventListener("submit", (e) => {
 
   // If validation passes, submit the form
 
-  console.log(payload);
+  async function submitForm(payload) {
+    let response = await fetch(urlAPI, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json;charset=utf-8",
+      },
+      body: JSON.stringify(payload),
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        // testing
+        console.log(
+          `response.ok: ${response.ok} , response.status: ${response.status}`
+        );
+        alert("Form submitted successfully");
+
+        return response;
+      })
+      .catch((err) => {
+        // testing
+        console.error(err);
+        alert("Please try again");
+      });
+
+    return response.json();
+  }
+
+  const res = await submitForm(payload);
+  // testing
+  console.log(res);
 
   form.reset();
   cleanErrors();
